@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendi.p Personal Web</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Favicon-->
+    <link rel="icon" href="logo.png" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--cdnjs-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="">PERSONAL WEB GW</a></div>
+
+        <div class="link">
+          <a href="#konten">Home</a>
+          <a href="konten/about.html" target="_self">About</a>
+          <a href="konten/project.html" target="_self">Project</a>
+          <a href="konten/contact.html" target="_self">Contact</a>
+        </div>
+
+        <div class="hamburger-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+
+      <div class="dropdown-menu">
+        <li><a href="#konten">Home</a></li>
+        <hr />
+        <li><a href="konten/about.html">About</a></li>
+        <hr />
+        <li><a href="konten/project.html">Project</a></li>
+        <hr />
+        <li><a href="konten/contact.html">Contact</a></li>
+      </div>
+    </header>
+
+    <!--Main .konten-->
+    <main class="konten" id="konten">
+      <section class="hero">
+        <h1>Rendi Permana</h1>
+        <p>I am a <span>Front End Developer</span></p>
+      </section>
+
+      <div class="social">
+        <a href="https://www.instagram.com/rendip23_/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </main>
+
+    <script>
+      const hamburgerBtn = document.querySelector(".hamburger-btn");
+      const dropDown = document.querySelector(".dropdown-menu");
+
+      let isOpen = false;
+
+      hamburgerBtn.addEventListener("click", function () {
+        if (isOpen) {
+          dropDown.style.display = "none";
+          hamburgerBtn.innerHTML = '<i class="fas fa-bars"></i>';
+          isOpen = false;
+        } else {
+          dropDown.style.display = "block";
+          hamburgerBtn.innerHTML = '<i class="fas fa-times"></i>';
+          isOpen = true;
+        }
+      });
+    </script>
+  </body>
+</html>
