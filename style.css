@@ -60,7 +60,7 @@ header .nav-extra a {
 /* MAIN */
 .konten {
   width: 100%;
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,69 +120,23 @@ header .nav-extra a {
     overflow: hidden;
   }
 
-  header .navbar .logo h1 {
-    padding-top: 0.5rem;
-    font-size: 1rem;
-  }
-
   .konten .hero h1 {
     font-size: 2rem;
     font-weight: 700;
   }
 
   .konten .hero p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
   }
 
   .konten .hero span {
     color: #ff0000;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
   }
 
   .konten .social a {
-    font-size: 1.5rem;
-  }
-
-  /* DROPDOWN */
-  #hamburger-btn {
-    display: block;
-    font-size: 1.5rem;
-    padding-top: 0.5rem;
-  }
-
-  .link {
-    display: none;
-  }
-
-  .link.show {
-    display: block;
-    position: absolute;
-    right: 5%;
-    top: 18%;
-    width: 300px;
-    height: 350px;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
-    border-radius: 20px;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2rem;
-  }
-
-  .link a {
-    color: #000 !important;
-    font-size: 2rem !important;
-    font-weight: 500 !important;
-    margin: 1.6rem !important;
-  }
-
-  .link a:hover {
-    transform: scale(1.2) !important;
-    color: #b6b6b6 !important;
+    font-size: 1.3rem;
   }
 }
