@@ -21,14 +21,15 @@ header .navbar {
   justify-content: space-between;
 }
 
-.header .navbar .link {
-  padding: 0 auto;
-}
-
-header .logo a {
+header .logo h1 a {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
+  padding: 0 auto;
+}
+
+.header .navbar .link {
+  padding: 0 auto;
 }
 
 header .navbar .link a {
@@ -42,48 +43,18 @@ header .navbar .link a:hover {
   color: #b6b6b6;
 }
 
-header .hamburger-btn {
+header .nav-extra {
+  padding: 0 10px;
+}
+
+header .nav-extra a {
+  width: 30px;
+  height: 30px;
   color: #fff;
-  cursor: pointer;
-  padding-top: 0.5rem;
-  padding-right: 1rem;
 }
 
-/* DROPDOWN MENU */
-
-.dropdown-menu {
+#hamburger-btn {
   display: none;
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background-color: rgb(0, 0, 0, 0.3);
-  backdrop-filter: blur(3px);
-  border-radius: 20px;
-  right: 1rem;
-  top: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 20px;
-  padding-top: 2%;
-}
-
-.dropdown-menu li {
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dropdown-menu a {
-  color: #000;
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.dropdown-menu a:hover {
-  color: #b6b6b6;
 }
 
 /* MAIN */
@@ -135,7 +106,7 @@ header .hamburger-btn {
   color: #b6b6b6;
 }
 
-/* RESPONSIVE DESIGN (MEDIA KUERI */
+/* RESPONSIVE DESIGN (MEDIA KUERI) */
 
 @media (max-width: 768px) {
   html {
@@ -149,13 +120,18 @@ header .hamburger-btn {
     overflow: hidden;
   }
 
+  header .navbar .logo h1 {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+
   .konten .hero h1 {
     font-size: 2rem;
     font-weight: 700;
   }
 
   .konten .hero p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
   }
 
@@ -166,6 +142,47 @@ header .hamburger-btn {
   }
 
   .konten .social a {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+
+  /* DROPDOWN */
+  #hamburger-btn {
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .link.show {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 18%;
+    width: 300px;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .link a {
+    color: #000 !important;
+    font-size: 2rem !important;
+    font-weight: 500 !important;
+    margin: 1.6rem !important;
+  }
+
+  .link a:hover {
+    transform: scale(1.2) !important;
+    color: #b6b6b6 !important;
   }
 }
