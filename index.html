@@ -28,7 +28,9 @@
   <body>
     <header>
       <nav class="navbar">
-        <div class="logo"><a href="">PERSONAL WEB GW</a></div>
+        <div class="logo">
+          <h1><a href="">PERSONAL WEB GW</a></h1>
+        </div>
 
         <div class="link">
           <a href="#konten">Home</a>
@@ -37,20 +39,10 @@
           <a href="konten/contact.html" target="_self">Contact</a>
         </div>
 
-        <div class="hamburger-btn">
-          <i class="fas fa-bars"></i>
+        <div class="nav-extra">
+          <a href="#" id="hamburger-btn"><i class="fas fa-bars"></i></a>
         </div>
       </nav>
-
-      <div class="dropdown-menu">
-        <li><a href="#konten">Home</a></li>
-        <hr />
-        <li><a href="konten/about.html">About</a></li>
-        <hr />
-        <li><a href="konten/project.html">Project</a></li>
-        <hr />
-        <li><a href="konten/contact.html">Contact</a></li>
-      </div>
     </header>
 
     <!--Main .konten-->
@@ -70,22 +62,30 @@
     </main>
 
     <script>
-      const hamburgerBtn = document.querySelector(".hamburger-btn");
-      const dropDown = document.querySelector(".dropdown-menu");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const dropdownMenu = document.querySelector(".link");
+      const icon = hamburgerBtn.querySelector("i");
 
       let isOpen = false;
 
       hamburgerBtn.addEventListener("click", function () {
         if (isOpen) {
-          dropDown.style.display = "none";
-          hamburgerBtn.innerHTML = '<i class="fas fa-bars"></i>';
+          dropdownMenu.classList.remove("show");
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
           isOpen = false;
         } else {
-          dropDown.style.display = "block";
-          hamburgerBtn.innerHTML = '<i class="fas fa-times"></i>';
+          dropdownMenu.classList.add("show");
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
           isOpen = true;
         }
       });
+    </script>
+
+    <!--Feather Icon-->
+    <script>
+      feather.replace();
     </script>
   </body>
 </html>
