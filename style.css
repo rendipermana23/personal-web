@@ -7,7 +7,7 @@
   font-family: poppins, sans-serif;
 }
 
-/* HEADER */
+/* HEADER, NAVBAR */
 header {
   width: 100%;
   height: 65px;
@@ -53,14 +53,14 @@ header .nav-extra a {
   color: #fff;
 }
 
-#hamburger-btn {
+#hamburgerBtn {
   display: none;
 }
 
-/* MAIN */
+/* MAIN .konten */
 .konten {
   width: 100%;
-  min-height: 95vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,8 +120,59 @@ header .nav-extra a {
     overflow: hidden;
   }
 
+  /* Hamburger Menu */
+  #hamburgerBtn {
+    display: block;
+  }
+
+  .link {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    width: 295px;
+    height: 350px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .link a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .link a:hover {
+    color: #b6b6b6;
+    scale: 1.2;
+  }
+
+  .nav-extra a {
+    padding-top: 0.8rem;
+    font-size: 1.5rem;
+  }
+
+  header .logo h1 {
+    padding-top: 0.5rem;
+  }
+
+  /* konten main */
   .konten .hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
   }
 
@@ -132,7 +183,7 @@ header .nav-extra a {
 
   .konten .hero span {
     color: #ff0000;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
   }
 

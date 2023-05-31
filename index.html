@@ -33,16 +33,16 @@
         </div>
 
         <div class="link">
-          <a href="#konten">Home</a>
+          <a href="#konten">Home</a></li>
           <a href="konten/about.html" target="_self">About</a>
           <a href="konten/project.html" target="_self">Project</a>
           <a href="konten/contact.html" target="_self">Contact</a>
         </div>
 
         <div class="nav-extra">
-          <a href="#" id="hamburger-btn"><i class="fas fa-bars"></i></a>
+          <a href="#" id="hamburgerBtn"><i class="fas fa-bars"></i></a>
         </div>
-      </nav>
+
     </header>
 
     <!--Main .konten-->
@@ -62,30 +62,15 @@
     </main>
 
     <script>
-      const hamburgerBtn = document.querySelector("#hamburger-btn");
-      const dropdownMenu = document.querySelector(".link");
-      const icon = hamburgerBtn.querySelector("i");
+    var hamburgerBtn = document.querySelector('.nav-extra');
+    var dropdownBars = document.querySelector('.link');
+    var icon = document.querySelector('#hamburger-btn i');
 
-      let isOpen = false;
-
-      hamburgerBtn.addEventListener("click", function () {
-        if (isOpen) {
-          dropdownMenu.classList.remove("show");
-          icon.classList.remove("fa-times");
-          icon.classList.add("fa-bars");
-          isOpen = false;
-        } else {
-          dropdownMenu.classList.add("show");
-          icon.classList.remove("fa-bars");
-          icon.classList.add("fa-times");
-          isOpen = true;
-        }
-      });
-    </script>
-
-    <!--Feather Icon-->
-    <script>
-      feather.replace();
+    hamburgerBtn.addEventListener('click', function() {
+      dropdownBars.style.display = (dropdownBars.style.display === 'block') ? 'none' : 'block';
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    });
     </script>
   </body>
 </html>
