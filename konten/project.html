@@ -5,8 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Project</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: poppins, sans-serif;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: poppins, sans-serif;
+      }
+
+      header {
+        width: 100%;
+        height: 60px;
+        display: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section {
+        background-color: #000;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      section .project-1 h1 {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      img {
+        width: 350px;
+        height: 450px;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+
+      /* Media Kueri */
+
+      @media (max-width: 768px) {
+        html {
+          font-size: 75%;
+        }
+
+        .gambar1 {
+          width: 275px;
+          height: 400px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>APA LIAT2 :,v BELUM JADI WKWK</h1>
+    <header>
+      <h1>My Project</h1>
+    </header>
+    <section>
+      <div class="project-1">
+        <h1>Form Login - (Project 1)</h1>
+        <div class="loginpic">
+          <img src="formlogin.png" alt="Form Login" class="gambar1" />
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const gambar1 = document.querySelector(".gambar1");
+    </script>
   </body>
 </html>
