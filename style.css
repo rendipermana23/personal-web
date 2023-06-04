@@ -154,6 +154,7 @@ header .nav-extra a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 2rem;
   }
 
   .link a:hover {
