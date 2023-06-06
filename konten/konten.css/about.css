@@ -130,14 +130,20 @@ section .skills {
   section .introducing .foto img {
     width: 200px;
     height: 200px;
+    margin-bottom: 2rem;
   }
   /* introducing end */
 
   /* hobby start */
+  section .hobby h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
 
   section .hobby .box-hobby {
     width: 90%;
-    height: 400px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
