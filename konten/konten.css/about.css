@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border-bottom: 1px solid #fff;
+}
+
+header h1 {
+  color: #fff;
+}
+
+/* introducing start */
+section .introducing {
+  background-color: #000;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  border-bottom: 1px solid #fff;
+}
+
+section .introducing h1 {
+  position: absolute;
+  top: 12%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+section .introducing img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+section .introducing p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 2rem;
+}
+
+section .introducing p span {
+  color: red;
+  font-weight: bold;
+}
+/* introducing end */
+
+/* hobby start */
+section .hobby {
+  background-color: #000;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+section .hobby h1 {
+  position: relative;
+  bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+section .hobby .box-hobby {
+  width: 1000px;
+  height: 500px;
+  background: rgb(150, 150, 150, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .hobby .box-hobby svg {
+  color: #fff;
+  margin: 3.5rem;
+}
+
+section .hobby .box-hobby p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* hobby end */
+
+/* skill start */
+section .skills {
+  background-color: #000;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+/* skill end */
+
+/* media kueri */
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+  /* introducing start */
+
+  section .introducing h1 {
+    padding-top: 1rem;
+  }
+  section .introducing .foto img {
+    width: 200px;
+    height: 200px;
+  }
+  /* introducing end */
+
+  /* hobby start */
+
+  section .hobby .box-hobby {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  section .hobby .isi-hobby {
+    display: flex;
+    align-items: center;
+  }
+
+  section .hobby .box-hobby svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  section .hobby .box-hobby P {
+    margin-top: 2rem;
+  }
+  /* hobby end */
+}
