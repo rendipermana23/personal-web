@@ -50,7 +50,7 @@ section .introducing img {
   position: relative;
   animation-name: geserdikit;
   animation-duration: 4s;
-  animation-delay: 2s;
+  animation-delay: 1s;
   animation-timing-function: ease;
 }
 
@@ -62,7 +62,7 @@ section .introducing img {
     left: 0px;
   }
   50% {
-    left: 50px;
+    left: 55px;
   }
   100% {
     left: 0px;
@@ -115,6 +115,11 @@ section .hobby .box-hobby {
 section .hobby .box-hobby svg {
   color: #fff;
   margin: 3.5rem;
+}
+
+.wo {
+  position: relative;
+  right: 2rem;
 }
 
 section .hobby .box-hobby p {
@@ -178,6 +183,11 @@ section .skills {
   section .hobby .box-hobby svg {
     width: 40px;
     height: 40px;
+  }
+
+  .wo {
+    position: relative;
+    right: 2rem;
   }
 
   section .hobby .box-hobby P {
