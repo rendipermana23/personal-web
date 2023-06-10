@@ -13,6 +13,7 @@ header {
   height: 65px;
   background-color: #000;
   padding: 1rem;
+  border-bottom: 2px solid #fff;
 }
 
 header .navbar {
@@ -65,10 +66,9 @@ header .nav-extra a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(bg.jpg);
+  background: #000;
   background-position: center;
   background-size: cover;
-  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .konten .hero h1 {
@@ -76,12 +76,14 @@ header .nav-extra a {
   font-weight: 700;
   letter-spacing: 0.5rem;
   text-shadow: 1px 0.5px 2px rgb(0, 0, 0);
+  color: #fff;
 }
 
 .konten .hero p {
   font-size: 1.5rem;
   font-weight: bold;
   padding-left: 3rem;
+  color: #fff;
 }
 
 .konten .hero span {
@@ -99,7 +101,7 @@ header .nav-extra a {
 .konten .social a {
   margin: 1.5rem;
   font-size: 35px;
-  color: #000;
+  color: #fff;
   cursor: pointer;
 }
 
