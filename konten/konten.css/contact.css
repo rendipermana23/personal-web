@@ -43,7 +43,7 @@ section .container {
 
 @keyframes transisi {
   0% {
-    margin-left: 50px;
+    margin-left: 75px;
   }
   100% {
     margin-left: 0px;
