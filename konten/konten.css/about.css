@@ -43,6 +43,22 @@ section .introducing h1 {
   font-size: 2rem;
 }
 
+section .introducing .foto {
+  position: relative;
+  animation-name: gayadikit;
+  animation-delay: 0.5s;
+  animation-duration: 2.5s;
+}
+
+@keyframes gayadikit {
+  0% {
+    margin-left: 75px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
 section .introducing img {
   width: 300px;
   height: 300px;
