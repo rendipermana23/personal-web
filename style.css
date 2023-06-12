@@ -71,6 +71,23 @@ header .nav-extra a {
   background-size: cover;
 }
 
+.konten .inti {
+  animation-name: geser;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+}
+
+@keyframes geser {
+  0% {
+    margin-left: 50px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
 .konten .hero h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -96,6 +113,7 @@ header .nav-extra a {
 .konten .social {
   position: relative;
   margin-top: 1rem;
+  margin-left: 7rem;
 }
 
 .konten .social a {
@@ -125,6 +143,11 @@ header .nav-extra a {
     font-size: 1rem;
     display: none;
     overflow: hidden;
+  }
+
+  .konten .social {
+    position: relative;
+    right: 30px;
   }
 
   /* Hamburger Menu */

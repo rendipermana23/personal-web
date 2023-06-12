@@ -42,11 +42,11 @@ section .container {
 }
 
 @keyframes transisi {
-  from {
-    margin-right: 4rem;
+  0% {
+    margin-left: 50px;
   }
-  to {
-    margin-right: 0;
+  100% {
+    margin-left: 0px;
   }
 }
 
