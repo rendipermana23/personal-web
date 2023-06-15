@@ -140,6 +140,19 @@ header .navbar .barsbtn {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation-name: calm;
+    animation-duration: 0.7s;
+    animation-delay: 0.3s;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes calm {
+    0% {
+      margin-left: 75px;
+    }
+    100% {
+      margin-left: 0px;
+    }
   }
 
   .link {
@@ -148,14 +161,14 @@ header .navbar .barsbtn {
 
   header .navbar .link a {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     padding: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 3.5rem;
+    padding-top: 3.3rem;
   }
 
   header .navbar .link a:hover {
