@@ -17,13 +17,7 @@
       rel="stylesheet"
     />
     <!--cdnjs-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
@@ -39,9 +33,9 @@
           <a href="konten/contact.html" target="_self">Contact</a>
         </div>
 
-        <div class="nav-extra">
-          <a href="#" id="hamburgerBtn"><i class="fas fa-bars"></i></a>
-        </div>
+       <div class="nav-extra">
+        <a href="#" class="barsbtn"><i class="fa-solid fa-bars"></i></a>
+       </div>
 
     </header>
 
@@ -62,14 +56,23 @@
     </main>
 
     <script>
-    var hamburgerBtn = document.querySelector('.nav-extra');
-    var dropdownBars = document.querySelector('.link');
-    var icon = document.querySelector('#hamburger-btn i');
+    const btnbars = document.querySelector('.nav-extra');
+    const dropdownBars = document.querySelector('.link');
+    let icon = document.querySelector('.barsbtn i');
+    let kondisi = false;
 
-    hamburgerBtn.addEventListener('click', function() {
-      dropdownBars.style.display = (dropdownBars.style.display === 'block') ? 'none' : 'block';
-      icon.classList.toggle('fa-bars');
-      icon.classList.toggle('fa-times');
+    btnbars.addEventListener('click', function() {
+      kondisi = !kondisi;
+
+      if (kondisi) {
+        dropdownBars.style.display = "block";
+        icon.classList.toggle('fa-xmark');
+        icon.classList.remove('fa-bars');
+      } else {
+        dropdownBars.style.display = "none";
+        icon.classList.toggle('fa-bars');
+        icon.classList.remove('fa-xmark');
+      }
     });
     </script>
   </body>

@@ -30,7 +30,7 @@ header .logo h1 a {
 }
 
 .header .navbar .link {
-  padding: 0 auto;
+  margin-right: 40%;
 }
 
 header .navbar .link a {
@@ -44,17 +44,14 @@ header .navbar .link a:hover {
   color: #b6b6b6;
 }
 
-header .nav-extra {
-  padding: 0 10px;
-}
-
-header .nav-extra a {
-  width: 30px;
-  height: 30px;
+header .navbar a {
   color: #fff;
+  font-size: 1.5rem;
+  padding-right: 1rem;
+  padding-top: 5px;
 }
 
-#hamburgerBtn {
+header .navbar .barsbtn {
   display: none;
 }
 
@@ -120,15 +117,12 @@ header .nav-extra a {
     font-size: 80%;
   }
 
-  .navbar,
   .link {
-    font-size: 1rem;
     display: none;
-    overflow: hidden;
   }
 
   /* Hamburger Menu */
-  #hamburgerBtn {
+  header .navbar .barsbtn {
     display: block;
   }
 
@@ -152,7 +146,7 @@ header .nav-extra a {
     display: none;
   }
 
-  .link a {
+  header .navbar .link a {
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
@@ -161,17 +155,12 @@ header .nav-extra a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 3rem;
+    padding-top: 3.5rem;
   }
 
-  .link a:hover {
+  header .navbar .link a:hover {
     color: #b6b6b6;
     scale: 1.2;
-  }
-
-  .nav-extra a {
-    padding-top: 0.8rem;
-    font-size: 1.5rem;
   }
 
   header .logo h1 {
