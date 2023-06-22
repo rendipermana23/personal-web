@@ -141,7 +141,7 @@ header .navbar .barsbtn {
     align-items: center;
     flex-direction: column;
     animation-name: calm;
-    animation-duration: 0.7s;
+    animation-duration: 1s;
     animation-delay: 0.3s;
     animation-timing-function: ease-in;
   }

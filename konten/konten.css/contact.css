@@ -36,6 +36,7 @@ section {
 
 section .container {
   position: relative;
+  top: 1.5;
   animation-name: transisi;
   animation-delay: 0.5s;
   animation-duration: 2.5s;
@@ -112,6 +113,11 @@ section .informasi p {
 @media (max-width: 768px) {
   html {
     font-size: 75%;
+  }
+
+  section .container {
+    position: relative;
+    top: 2rem;
   }
 
   section .nomor-box {
