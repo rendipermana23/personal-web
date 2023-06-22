@@ -162,9 +162,10 @@ section .my-skills {
 
   /* hobby start */
   section .hobby h1 {
+    position: relative;
+    margin-bottom: 3.5rem;
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 2rem;
   }
 
   section .hobby .box-hobby {
