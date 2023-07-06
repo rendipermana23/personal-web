@@ -141,6 +141,28 @@ section .my-skills {
   align-items: center;
   color: #fff;
 }
+
+section .my-skills .judul {
+  position: relative;
+  bottom: 300px;
+  left: 110px;
+  border-bottom: 1px solid;
+}
+
+section .my-skills .judul h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+}
+
+section .my-skills ul li {
+  position: relative;
+  right: 100px;
+  margin: 2rem;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
 /* skill end */
 
 /* media kueri */
@@ -196,4 +218,17 @@ section .my-skills {
     margin-top: 2rem;
   }
   /* hobby end */
+
+  /* my skills start */
+  @media (max-width: 768px) {
+    html {
+      font-size: 75%;
+    }
+
+    section .judul {
+      position: absolute;
+      right: 500px;
+    }
+  }
+  /* my skills end */
 }
